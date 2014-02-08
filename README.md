@@ -1,4 +1,4 @@
-we365
+we365 (Feb 2014)
 =====
 
 Creating a responsive website using bootstrap. First time trying out bootstrap (http://getbootstrap.com/). 

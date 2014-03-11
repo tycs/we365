@@ -27,11 +27,19 @@
 <!-- NAVBAR ================================================== -->
   <body>
     <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
+		<!-- Adding the navbar toggle --> 
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
           <a class="navbar-brand" href="index.php"><img src="img/logo-blue.png" /></a>
         </div>
+		
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php">Home</a></li>
@@ -60,75 +68,96 @@
     </div>
 
 	<!-- Carousel ================================================== -->
-	<div id="myCarousel" class="carousel slide">
 	
-	<!-- Carousel items -->
-	<div class="carousel-inner">
-		<div class="active item">
-			<img alt="First slide" src="img/volunteer-slide.png" />
+	<div id="carousel-generic" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-generic" data-slide-to="2"></li>
+			<li data-target="#carousel-generic" data-slide-to="3"></li>
+			<li data-target="#carousel-generic" data-slide-to="4"></li>
+			<li data-target="#carousel-generic" data-slide-to="5"></li>
+			<li data-target="#carousel-generic" data-slide-to="6"></li>
+		</ol>
+
+	<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="img/volunteer-slide.png" alt="First slide">
+			</div>
+			
+			<div class="item">
+				<img src="img/causes-slide.png" />
+			</div>
+			
+			<div class="item">
+				<img src="img/profile-slide.png" />
+			</div>
+			
+			<div class="item">
+				<img src="img/actiondial-slide.png" />
+			</div>
+			
+			<div class="item">
+				<img src="img/groups-slide.png" />
+			</div>
+			
+			<div class="item">
+				<img src="img/badges-slide.png" />
+			</div>
+			
+			<div class="item">
+				<img src="img/challenges-slide.png" />
+			</div>
 		</div>
-		<div class="item">
-			<img src="img/causes-slide.png" />
-		</div>
-		<div class="item">
-			<img src="img/profile-slide.png" />
-		</div>
-		<div class="item">
-			<img src="img/actiondial-slide.png" />
-		</div>
-		<div class="item">
-			<img src="img/groups-slide.png" />
-		</div>
-		<div class="item">
-			<img src="img/badges-slide.png" />
-		</div>
-		<div class="item">
-			<img src="img/challenges-slide.png" />
-		</div>
-	</div>
-	
-	<!-- Carousel nav -->
-	<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-	<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+	<!-- Controls -->
+	<a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="right carousel-control" href="#carousel-generic" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
 	</div>
 
     <!-- Marketing messaging and featurettes ============================================ -->
     
 	<!-- Wrap the rest of the page in another container to center all the content. -->
-    <div class="container marketing">
+    <div class="container-fluid marketing">
 
       <!-- Three platforms (below carousel) -->
       <div class="row" id="download">
 	 
 		<!-- Apple store download --> 
-        <div class="col-lg-4">
+        <div class="col-xs-6 col-md-4">
 		<center>
           <a href="https://itunes.apple.com/ca/app/we365/id722529129"><img class="img-responsive" data-src="holder.js/140x140" src="img/appIcon-ios.png" alt="apple store image"></a>
           <h2><a href="https://itunes.apple.com/ca/app/we365/id722529129">Download</a></h2>
           <p>We365 for iPhone, iPad, iPod Touch</p>
           <p><a class="btn btn-default" href="https://itunes.apple.com/ca/app/we365/id722529129" role="button">View details &raquo;</a></p>
 		</center>
-		</div><!-- /.col-lg-4 -->
+		</div><!-- /.col-md-4 -->
 		
 		<!-- BlackBerry store download --> 
-        <div class="col-lg-4">
+        <div class="col-xs-6 col-md-4">
 		<center>
           <a href="http://appworld.blackberry.com/webstore/content/38841887/?lang=en&countrycode=CA"><img class="img-responsive" data-src="holder.js/140x140" src="img/appIcon-bb.png" alt="blackberry store image"></a>
           <h2><a href="http://appworld.blackberry.com/webstore/content/38841887/?lang=en&countrycode=CA">Download</a></h2>
           <p>We365 for BlackBerry® Z10</p>
           <p><a class="btn btn-default" href="http://appworld.blackberry.com/webstore/content/38841887/?lang=en&countrycode=CA" role="button">View details &raquo;</a></p>
         </center>
-		</div><!-- /.col-lg-4 -->
+		</div><!-- /.col-md-4 -->
 		
 		<!-- Google Play store download -->
-        <div class="col-lg-4">
+        <div class="col-xs-6 col-md-4">
 		<center>
 		  <a href="https://play.google.com/store/apps/details?id=ca.endloop.we365&hl=en"><img class="img-responsive" data-src="holder.js/140x140" src="img/appIcon-google.png" alt="google play store image"></a>
           <h2><a href="https://play.google.com/store/apps/details?id=ca.endloop.we365&hl=en">Download</a></h2>
           <p>We365 for Android™*</p>
           <p><a class="btn btn-default" href="https://play.google.com/store/apps/details?id=ca.endloop.we365&hl=en" role="button">View details &raquo;</a></p>
         </center>
-		</div><!-- /.col-lg-4 -->
+		</div><!-- /.col-md-4 -->
 		
       </div><!-- /.row -->
 
@@ -138,15 +167,17 @@
 
 	  <!-- Who we are -->
       <div class="row featurette" id="about"> 
-        <div class="col-md-5">
+        <div class="col-xs-12 col-md-5">
           <h2 class="featurette-heading">WHO. <span class="text-muted" style="font-size:24px;">our story.</span></h2>
           <p class="lead">We365 is a digital community that helps you make positive change in our world, every day of the year.<p>
 		  <p class="lead">It’s an online space to connect with others and share causes you care about, while creating a portfolio of your social impact.</p>
           <p class="lead">Free to join, this mobile app and website let you track and verify your volunteer activities for school or work, and fundraise for any charity of your choice.</p>
 		</div>
-        <div class="col-md-7">
+        <div class="col-xs-12 col-md-7">
 			<!-- Embedded YouTube video -->
-            <iframe width="640" height="360" src="//www.youtube.com/embed/SVQUXSM_wbo?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+		<div class="js-video [vimeo, widescreen]">
+			<iframe width="640" height="360" src="//www.youtube.com/embed/SVQUXSM_wbo?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+		</div>
 		</div>
       </div> <!-- /.row -->
 
@@ -154,10 +185,10 @@
 
 	  <!-- What we do --> 
       <div class="row featurette">
-        <div class="col-md-5">
+        <div class="col-xs-12 col-md-5">
           <img class="img-responsive" src="img/whatweare.png" alt="what we are">
         </div>
-        <div class="col-md-7">
+        <div class="col-xs-12 col-md-7">
           <h2 class="featurette-heading">WHAT. <span class="text-muted" style="font-size:24px;">see for yourself.</span></h2>
 		  <p class="lead">It’s a social platform to engage with others and to find and share compelling content and actions, on your own or as a group.</p>
 		  <p class="lead">Build your own profile of impactful actions, which can be leveraged for résumés and job applications, as well as to complement college, university and scholarship applications.</p>
@@ -172,7 +203,7 @@
 	  
 		<div class="col-md-1"></div>
 	  
-		  <div class="col-md-6">
+		  <div class="col-xs-6 col-md-6">
 			<h2 class="featurette-heading">Join Now. <span class="text-muted" style="font-size:24px;">to make a difference</span></h2>
 
 			<form class="form-horizontal">  
@@ -474,7 +505,7 @@
 		
 		<div class="col-md-1"></div>
 		
-        <div class="col-md-3">
+        <div class="col-xs-6 col-md-3">
 			<img class="img-responsive" src="img/join.png">
         </div>
 		
@@ -486,11 +517,11 @@
 	  
 	  <!-- Contact Form -->
 	  <div class="row featurette" id="contact"> 
-		<div class="col-md-6">
+		<div class="col-xs-12 col-md-6">
 			<img class="img-responsive" src="img/aboutus.png">
 		</div>
 		
-		<div class="col-md-6">
+		<div class="col-xs-12 col-md-6">
 			<h2 class="featurette-heading">Contact us. <span class="text-muted" style="font-size:24px;">have a question?</span></h2>
 			<form class="form-horizontal" role="form">
 				<div class="form-group">
@@ -513,19 +544,19 @@
 	  
 	  <!-- Associates link --> 
 	  <div class="row featurette"> 
-		<div class="col-md-4">
+		<div class="col-xs-6 col-md-4">
 		  <a href="http://freethechildren.com/"><img class="img-responsive" src="img/footer-logo-ftc.png" style="height:151px;" alt="free the children logo"></a>
 		</div>
 		
-		<div class="col-md-3">
+		<div class="col-xs-6 col-md-3">
 		  <a href="http://metowe.com/"><img class="img-responsive" src="img/footer-logo-m2w.png" style="height:151px;" alt="me to we logo"></a>
 		</div>
 		
-		<div class="col-md-3">
+		<div class="col-xs-6 col-md-3">
 		  <a href="http://weday.com/"><img class="img-responsive" src="img/footer-logo-weday.png" style="height:151px;" alt="we day logo"></a>
 		</div>
 		
-		<div class="col-md-2">
+		<div class="col-xs-6 col-md-2">
 		  <a href="http://www.we365.com/connect/"><img class="img-responsive" src="img/footer-logo-we365.png" style="height:151px;" alt="we 365 logo"></a>
 		</div>
 	  </div><!-- /.row -->

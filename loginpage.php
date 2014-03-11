@@ -31,8 +31,16 @@
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
+		<!-- Adding the navbar toggle --> 
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
           <a class="navbar-brand" href="index.php"><img src="img/logo-blue.png" /></a>
         </div>
+		
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php">Home</a></li>
@@ -80,7 +88,7 @@
 
 
 				<div class="form-group"> 
-					<input type="submit" class="btn btn-primary" name="Submit" value="Login" />
+					<input type="submit" name="Submit" class="btn btn-primary" value="Login" />
 					<a href="#">forgot password?</a>
 				</div>
 			</form>
